@@ -1,4 +1,15 @@
-/* HeroSection.module.css */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.heroSection .svg {
+  animation: rotate 10s infinite linear; /* Adjust the duration as needed */
+}
 
 .heroSection {
     z-index: 0;
@@ -26,9 +37,10 @@
   
   .svg {
     position: absolute;
-    top: 50%;
+    top: 30%;
     right: 0;
     padding-right: 150px;
+    padding-left: 150px;
     transform: translateY(-50%);
   }
   
