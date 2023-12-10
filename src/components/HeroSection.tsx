@@ -1,6 +1,7 @@
 // components/HeroSection.tsx
 import React from 'react';
 import styles from '../styles/HeroSection.module.css'; // Import your CSS module
+import NextLink from 'next/link';
 
 const HeroSection: React.FC = () => {
   return (
@@ -11,9 +12,11 @@ const HeroSection: React.FC = () => {
           at University of Waterloo
         </h1>
         <p style={{ fontSize: '2.5rem', marginBottom: '5rem'}}>Empowering Students Through Research Opportunities</p>
-        <p style={{ fontSize: '1.5rem', borderBottom: '2px solid #FFDB58', display: 'inline-block' }}>
-          Let's Get Started
-        </p>
+        <NextLink href="#intro" passHref>
+            <p style={{ color: 'white', fontSize: '1.5rem', borderBottom: '2px solid #FFDB58', display: 'inline-block' }}>
+              Let's Get Started
+            </p>
+        </NextLink>
       </div>
       <svg className={styles.svg} width="400px" height="400px" xmlns="http://www.w3.org/2000/svg">
         <g transform="translate(200,200)"> {/* Translate to the center of the SVG */}
