@@ -3,7 +3,7 @@ import styles from '../styles/IntroductionSection.module.css';
 
 const IntroductionSection: React.FC = () => {
   return (
-    <div className={styles.introductionSection}>
+    <div className={styles.introductionSection} id='intro'>
       <img src='./glass.svg' />
       <div>
         <h2 className={styles.title}>About Us</h2>

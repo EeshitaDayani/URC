@@ -1,5 +1,6 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Button } from '@mui/material';
+import NextLink from 'next/link';
 
 const NavBar: React.FC = () => {
   return (
@@ -15,15 +16,15 @@ const NavBar: React.FC = () => {
           URC
         </Typography>
         <div>
-          <Button color="inherit" sx={{ fontSize: '1rem' }}>
-            Events
-          </Button>
-          <Button color="inherit" sx={{ marginLeft: 2, fontSize: '1rem' }}>
-            Blog
-          </Button>
-          <Button color="inherit" sx={{ marginLeft: 2, fontSize: '1rem' }}>
-            Contact Us
-          </Button>
+          <NextLink href="#intro" passHref>
+            <Button sx={{ color: 'white', fontSize: '1rem', marginLeft: '20px' }}>EVENTS</Button>
+          </NextLink>
+          <NextLink href="#intro" passHref>
+            <Button sx={{ color: 'white', fontSize: '1rem', marginLeft: '20px' }}>BLOG</Button>
+          </NextLink>
+          <NextLink href="#intro" passHref>
+            <Button sx={{ color: 'white', fontSize: '1rem', marginLeft: '20px' }}>CONTACT US</Button>
+          </NextLink>
         </div>
       </Toolbar>
     </AppBar>
