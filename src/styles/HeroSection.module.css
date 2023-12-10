@@ -1,0 +1,35 @@
+/* HeroSection.module.css */
+.heroSection {
+    z-index: 0;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #000; /* Set background color to black */
+  }
+
+  .text {
+    z-index: 1;
+    color: #fff; /* Set text color to white or the desired color */
+    position: relative;
+    bottom: 15%;
+  }
+  
+  .waveSvg {
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    stroke: #DAA520;
+  }
+  
+  .waveSvg2 {
+    z-index: 0;
+    position: absolute;
+    width: 130%;
+    transform: scaleX(-1) rotate(12deg); /* Adjust transformation properties as needed */
+  }
+  

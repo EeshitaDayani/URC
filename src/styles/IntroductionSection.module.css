@@ -1,0 +1,11 @@
+.introductionSection {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #e0e0e0;
+  color: #333;
+}
