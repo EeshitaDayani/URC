@@ -1,35 +1,34 @@
 /* HeroSection.module.css */
+
 .heroSection {
     z-index: 0;
     position: relative;
     height: 100vh;
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     background-color: #000; /* Set background color to black */
+    overflow: hidden;
   }
-
+  
   .text {
     z-index: 1;
     color: #fff; /* Set text color to white or the desired color */
-    position: relative;
-    bottom: 15%;
+    position: absolute;
+    text-align: left;
+    padding-left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
   }
   
-  .waveSvg {
-    z-index: 0;
+  .svg {
     position: absolute;
-    width: 100%;
-    height: auto;
-    stroke: #DAA520;
-  }
-  
-  .waveSvg2 {
-    z-index: 0;
-    position: absolute;
-    width: 130%;
-    transform: scaleX(-1) rotate(12deg); /* Adjust transformation properties as needed */
+    top: 50%;
+    right: 0;
+    padding-right: 150px;
+    transform: translateY(-50%);
   }
   
