@@ -9,7 +9,7 @@ export default function SectionsWrapper() {
       <div>
         <HeroSection />
         <IntroductionSection />
-        <SuccessStoriesSection />
+        {/* <SuccessStoriesSection /> */}
         <GetInvolvedSection />
       </div>
     );

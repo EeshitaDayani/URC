@@ -16,8 +16,8 @@ const HeroSection: React.FC = () => {
         </p>
       </div>
       <svg className={styles.svg} width="400px" height="400px" xmlns="http://www.w3.org/2000/svg">
-        <rect x="10%" y="10%" width="70%" height="70%" fill="none" stroke="#FFDB58" stroke-width="4"/>
-        <rect x="17%" y="5%" width="70%" height="70%" fill="none" stroke="#FFDB58" stroke-width="4" transform="rotate(15 50 50)"/>
+        <rect x="10%" y="10%" width="70%" height="70%" fill="none" stroke="#FFDB58" strokeWidth="4"/>
+        <rect x="17%" y="5%" width="70%" height="70%" fill="none" stroke="#FFDB58" strokeWidth="4" transform="rotate(15 50 50)"/>
       </svg>
     </div>
   );
