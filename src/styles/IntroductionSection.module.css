@@ -2,56 +2,82 @@
   z-index: 0;
   position: relative;
   height: 70vh;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto 40px auto;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: left; /* Left-aligned text */
-  background-color: #333; /* Dark Grey Background */
-  color: #E3C74B; /* Darker Mustard Yellow Text Color */
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  background-color: #333;
+  color: white;
   overflow: hidden;
+  border-radius: 40px;
+  padding: 60px;
+}
+
+.leftSection {
+  width: 35%;
+}
+
+.rightSection {
+  width: 50%;
+  padding-top: 10%;
 }
 
 .title {
-  font-size: 3rem;
-  margin-bottom: 3rem; /* Adjusted margin for title */
+  font-size: 6rem;
+  font-weight: 300;
+  margin-bottom: 0;
+  word-wrap: break-word; /* Allow text to wrap */
 }
 
 .paragraph {
-  font-size: 1.5rem;
-  margin-bottom: 2rem; /* Adjusted margin for paragraph */
+  /* width: 70%; */
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 0;
+  word-wrap: break-word; /* Allow text to wrap */
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 20px;
 }
 
 .list {
   list-style: none;
   padding: 0;
   margin: 0;
+  flex-basis: 50%; /* Set initial size to 50% */
 }
 
 .listItem {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: 200;
   margin-bottom: 1rem;
   position: relative;
-  overflow: hidden; /* Ensure the overflow doesn't extend beyond the padding */
-  border-radius: 0 15px 15px 0; /* Add border-radius for rounded corners */
+  overflow: hidden;
+  border-radius: 0 15px 15px 0;
 }
 
 .listItem::before {
   content: '';
   position: absolute;
   top: 0;
-  left: -30px; /* Add left padding */
+  left: -30px;
   width: 0;
   height: 100%;
   background-color: black;
   z-index: -1;
-  transition: width 0.3s ease-out, left 1s ease-out; /* Add transition for left padding */
-  border-radius: 0 15px 15px 0; /* Add border-radius for rounded corners */
+  transition: width 0.3s ease-out, left 1s ease-out;
+  border-radius: 0 15px 15px 0;
 }
 
 .listItem:hover::before {
-  width: calc(100% + 30px); /* Expand the width to cover the padding */
-  left: 0; /* Adjust left padding on hover */
+  width: calc(100% + 30px);
+  left: 0;
 }
-

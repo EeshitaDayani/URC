@@ -18,9 +18,9 @@ const NavBar: React.FC = () => {
           URC
         </Typography>
         <div>
-          <NextLink href="#intro" passHref>
+          {/* <NextLink href="#intro" passHref>
             <Button sx={{ color: 'white', fontSize: '1rem', marginLeft: '20px' }}>EVENTS</Button>
-          </NextLink>
+          </NextLink> */}
           <NextLink href="#intro" passHref>
             <Button sx={{ color: 'white', fontSize: '1rem', marginLeft: '20px' }}>BLOG</Button>
           </NextLink>
