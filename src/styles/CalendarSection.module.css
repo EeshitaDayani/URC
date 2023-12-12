@@ -1,0 +1,16 @@
+.CalendarSection {
+  z-index: 0;
+  position: relative;
+  height: 70vh;
+  width: 80%;
+  margin: 0 auto 40px auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.sectionTitle {
+    font-size: 3rem; /* Adjust the font size as needed */
+    font-weight: 300;
+    margin-bottom: 100px; /* Add some bottom margin for spacing */
+    color: #fff; /* Set the text color to white or your desired color */
+  }
