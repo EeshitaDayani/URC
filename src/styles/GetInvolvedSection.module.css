@@ -2,58 +2,52 @@
   z-index: 0;
   position: relative;
   height: 70vh;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-
-.getInvolvedLeftSection {
-  width: 70%; /* Set width to 70% for left section */
+  width: 80%;
+  margin: 0 auto 40px auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #fff;
-  color: #000;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  background-color: #FFDB58;
+  color: black;
   overflow: hidden;
-  padding: 50px;
-}
-
-.getInvolvedRightSection {
-  width: 30%; /* Set width to 30% for right section */
-  background-color: #000;
-  color: #E3C74B; /* Yellow Text Color */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.getInvolvedRightSection img {
-  width: 80%; /* Make sure the image takes the full width of the container */
-  height: auto;
-  fill: #E3C74B; /* Use fill property for SVG images */
+  border-radius: 40px;
+  padding: 60px;
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 2rem;
 }
 
 .paragraph {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  font-size: 300;
   margin-bottom: 2.5rem;
 }
 
-.list {
-  list-style-type: none;
-  padding-left: 50px;
-  margin: 0;
+.buttons {
+  display: flex;
+  gap: 20px; /* Adjust the gap between buttons as needed */
 }
 
-.listItem {
+.button {
+  padding: 10px 20px;
+  border: 2px solid #000; /* Black border */
+  border-radius: 30px;
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  cursor: pointer;
+  background-color: #FFDB58; /* Yellow background color */
+  color: #000; /* Black text color */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+
+  /* Add any additional styles you want for the buttons */
+}
+
+.button:hover {
+  background-color: #000; /* Black background color on hover */
+  color: #FFDB58; /* Yellow text color on hover */
 }
 
 .icons img {
