@@ -9,13 +9,16 @@
   justify-content: space-between;
   align-items: flex-start;
   text-align: left;
-  background-color: #333;
+  background-color: #1b1b1b;
   color: white;
   overflow: hidden;
   border-radius: 40px;
   padding: 60px;
 }
-
+.onScreen {
+  color: yellow;
+  transition: color 1s ease; /* Add a transition for a smooth color change */
+}
 .leftSection {
   width: 35%;
 }
@@ -64,20 +67,9 @@
   border-radius: 0 15px 15px 0;
 }
 
-.listItem::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -30px;
-  width: 0;
-  height: 100%;
-  background-color: black;
-  z-index: -1;
-  transition: width 0.3s ease-out, left 1s ease-out;
-  border-radius: 0 15px 15px 0;
+.introductionSection.active {
+  background-color: #FFDB58;
+  color: black;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-.listItem:hover::before {
-  width: calc(100% + 30px);
-  left: 0;
-}
