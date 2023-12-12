@@ -5,10 +5,10 @@
   width: 80%;
   margin: 0 auto 40px auto;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: row;
   text-align: left;
+  /* align-items: center; */
+  justify-content: space-between;
   background-color: #FFDB58;
   color: black;
   overflow: hidden;
@@ -24,7 +24,7 @@
 .paragraph {
   font-size: 2.5rem;
   font-size: 300;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3.5rem;
 }
 
 .buttons {
@@ -56,4 +56,12 @@
   padding-top: 70px;
   padding-left: 50px;
   margin-right: 10px;
+}
+
+
+.socialIcon {
+  margin: auto;
+  width: 50%; /* Adjust the width as needed */
+  height: 50%;
+  /* Add any additional styles you want for the social icon */
 }
