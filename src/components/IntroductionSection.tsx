@@ -32,20 +32,27 @@ const IntroductionSection: React.FC = () => {
       <div className={styles.leftSection}>
         <h2 className={styles.title}>About Us</h2>
         <p className={styles.paragraph}>
-          Welcome to the UWaterloo Undergraduate Research Club, where curiosity meets opportunity.
+          Welcome to the UWaterloo Undergraduate Research Club, where
+          <span style={{ color: '#FFDB58' }}> curiosity meets opportunity.</span>
         </p>
       </div>
-      <Divider sx={{ backgroundColor: 'white' }} orientation='vertical' flexItem />
+      <Divider sx={{ backgroundColor: '#878787' }} orientation='vertical' flexItem />
       <div className={styles.rightSection}>
         <ul className={styles.list}>
           <li className={styles.listItem}>
-            <span>&#8226;</span> Engage in exciting research projects
+            Engage in exciting research projects
           </li>
           <li className={styles.listItem}>
-            <span>&#8226;</span> Connect with like-minded peers and mentors
+            Connect with like-minded peers and mentors
           </li>
           <li className={styles.listItem}>
-            <span>&#8226;</span> Explore your academic and professional interests
+            Explore your academic and professional interests
+          </li>
+          <li className={styles.listItem}>
+            Gain hands-on experience in your field of interest
+          </li>
+          <li className={styles.listItem}>
+            Collaborate with profs on meaningful projects
           </li>
         </ul>
       </div>
