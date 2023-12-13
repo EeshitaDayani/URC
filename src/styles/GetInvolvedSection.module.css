@@ -1,7 +1,6 @@
 .getInvolvedSection {
   z-index: 0;
   position: relative;
-  height: 70vh;
   width: 80%;
   margin: 0 auto 40px auto;
   display: flex;
@@ -61,7 +60,7 @@
 
 .socialIcon {
   margin: auto;
-  width: 50%; /* Adjust the width as needed */
-  height: 50%;
+  width: 30%; /* Adjust the width as needed */
+  height: 30%;
   /* Add any additional styles you want for the social icon */
 }

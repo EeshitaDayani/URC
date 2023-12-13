@@ -1,7 +1,6 @@
 .introductionSection {
   z-index: 0;
   position: relative;
-  height: 70vh;
   width: 80%;
   margin: 0 auto 40px auto;
   display: flex;
@@ -21,25 +20,28 @@
 }
 .leftSection {
   width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .rightSection {
   width: 50%;
-  padding-top: 10%;
 }
 
 .title {
   font-size: 6rem;
   font-weight: 300;
-  margin-bottom: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
   word-wrap: break-word; /* Allow text to wrap */
 }
 
 .paragraph {
-  /* width: 70%; */
   font-size: 2.5rem;
   font-weight: 300;
-  margin-bottom: 0;
   word-wrap: break-word; /* Allow text to wrap */
 }
 
