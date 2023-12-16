@@ -12,18 +12,17 @@
   color: black;
   overflow: hidden;
   border-radius: 40px;
-  padding: 60px;
+  padding: 20px;
 }
 
 .title {
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
 }
 
 .paragraph {
-  font-size: 2.5rem;
-  font-size: 300;
-  margin-bottom: 3.5rem;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
 }
 
 .buttons {
@@ -35,7 +34,7 @@
   padding: 10px 20px;
   border: 2px solid #000; /* Black border */
   border-radius: 30px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   cursor: pointer;
   background-color: #FFDB58; /* Yellow background color */
   color: #000; /* Black text color */
@@ -49,18 +48,94 @@
   color: #FFDB58; /* Yellow text color on hover */
 }
 
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .icons img {
   width: 40px;
   height: 40px;
-  padding-top: 70px;
-  padding-left: 50px;
-  margin-right: 10px;
+  padding: 40px;
+}
+
+.socialIcon {
+  display: none;
 }
 
 
-.socialIcon {
-  margin: auto;
-  width: 30%; /* Adjust the width as needed */
-  height: 30%;
-  /* Add any additional styles you want for the social icon */
+@media (min-width:1025px) {
+  .getInvolvedSection {
+    z-index: 0;
+    position: relative;
+    width: 80%;
+    margin: 0 auto 40px auto;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    /* align-items: center; */
+    justify-content: space-between;
+    background-color: #FFDB58;
+    color: black;
+    overflow: hidden;
+    border-radius: 40px;
+    padding: 60px;
+  }
+  
+  .title {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  
+  .paragraph {
+    font-size: 2.5rem;
+    font-size: 300;
+    margin-bottom: 3.5rem;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 20px; /* Adjust the gap between buttons as needed */
+  }
+  
+  .button {
+    padding: 10px 20px;
+    border: 2px solid #000; /* Black border */
+    border-radius: 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #FFDB58; /* Yellow background color */
+    color: #000; /* Black text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+  
+    /* Add any additional styles you want for the buttons */
+  }
+  
+  .button:hover {
+    background-color: #000; /* Black background color on hover */
+    color: #FFDB58; /* Yellow text color on hover */
+  }
+
+  .icons {
+    display: block
+  }
+  
+  .icons img {
+    width: 40px;
+    height: 40px;
+    padding-top: 70px;
+    padding-left: 50px;
+    margin-right: 10px;
+  }
+  
+  
+  .socialIcon {
+    display: block;
+    margin: auto;
+    width: 30%; /* Adjust the width as needed */
+    height: 30%;
+    /* Add any additional styles you want for the social icon */
+  }
 }
