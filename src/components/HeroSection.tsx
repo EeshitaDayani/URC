@@ -7,19 +7,19 @@ const HeroSection: React.FC = () => {
   return (
     <div className={styles.heroSection}>
       <div className={styles.text}>
-        <h1 style={{ fontSize: '3rem', marginBottom: '5rem'}}>
+        <h1 className={styles.title}>
           Welcome to the <span style={{ color: '#FFDB58' }}>Undergraduate Research Club</span> <br />
           at University of Waterloo
         </h1>
-        <p style={{ fontSize: '2.5rem', marginBottom: '5rem'}}>Empowering Students Through Research Opportunities</p>
+        <p className={styles.subtitle}>Empowering Students Through Research Opportunities</p>
         <NextLink href="#intro" passHref>
-            <p style={{ color: 'white', fontSize: '1.5rem', borderBottom: '2px solid #FFDB58', display: 'inline-block' }}>
+            <p className={styles.started}>
               Let's Get Started
             </p>
         </NextLink>
       </div>
-      <svg className={styles.svg} width="400px" height="400px" xmlns="http://www.w3.org/2000/svg">
-        <g transform="translate(200,200)"> {/* Translate to the center of the SVG */}
+      <svg className={styles.svg} xmlns="http://www.w3.org/2000/svg">
+        <g className={styles.transform} >
           <rect x="-35%" y="-35%" width="70%" height="70%" fill="none" stroke="#FFDB58" strokeWidth="4"/>
           <rect x="-35%" y="-30%" width="70%" height="70%" fill="none" stroke="#FFDB58" strokeWidth="4" transform="rotate(15 60 20)"/>
         </g>
